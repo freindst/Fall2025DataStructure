@@ -1,0 +1,14 @@
+package driver;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+
+	}
+	
+	public int LinearSearch(int[] input) {
+		return 0;
+	}
+
+}

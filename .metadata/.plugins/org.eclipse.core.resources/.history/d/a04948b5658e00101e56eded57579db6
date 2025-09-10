@@ -1,0 +1,39 @@
+package driver;
+import java.util.Random;
+
+public class Main {
+	public static void main(String[] args) {
+		Random random = new Random();
+		System.out.println(random.nextInt(0, 100));
+		
+		int[] arr = new int[] {3, 5, 9, 11, 2, 91, 56, 32, 18};
+		int result1 = LinearSearch1(arr, 1);
+		System.out.println(result1);
+		int result2 = LinearSearch1(arr, 2);
+		System.out.println(result2);
+		
+	}
+	
+	//instance method
+	public int LinearSearch(int[] input, int target) {
+		for(int i = 0; i < input.length; i++) {
+			if (target == input[i]) {
+				return i;
+			}
+		}
+		return -1;
+	}
+
+	//class method/function
+	//return the first item's position, which matches the target
+	public static int LinearSearch1(int[] input, int target) {
+		for(int i = 0; i < input.length; i++) {
+			if (target == input[i]) {
+				return i;
+			}
+		}
+		return -1;
+	}
+	
+	
+}

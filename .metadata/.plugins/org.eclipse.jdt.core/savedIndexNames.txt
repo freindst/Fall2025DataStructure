@@ -1,0 +1,5 @@
+INDEX VERSION 1.134+/Users/yimingliao/Projects/Java/Fall2025DataStructure/.metadata/.plugins/org.eclipse.jdt.core
+2348265253.index
+858669630.index
+4019788953.index
+1865797976.index
