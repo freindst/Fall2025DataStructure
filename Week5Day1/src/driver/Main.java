@@ -10,7 +10,7 @@ public class Main {
 		System.out.println("This is the original array");
 		printArray(testArray);
 		System.out.println("This is the sorted array");
-		printArray(selection_sort(testArray));
+		printArray(insertion_sort(testArray));
 
 	}
 	
@@ -97,4 +97,23 @@ public class Main {
 	//randomize[1, 1000]
 	//pick first 100 items
 	//O(n)
+	
+	public static int[] insertion_sort(int[] arr) {
+		int[] result = new int[arr.length];
+		for(int i = 0; i < arr.length; i++) {
+			result[i] = arr[i];
+		}
+		//for insertion sort, the external loop is looping on the position of the last item of the ordered part.
+		for(int i = 0; i < result.length - 1; i++) {
+			int j = i;
+			while (j > 0 && result[j] >= result[j - 1]) { //what is the error when j = -1?
+				//compiler efficiency in reasoning
+				int temp = result[j];
+				result[j] = result[j - 1];
+				result[j - 1] = temp;
+				j--;
+			}
+		}
+		return result;
+	}
 }
