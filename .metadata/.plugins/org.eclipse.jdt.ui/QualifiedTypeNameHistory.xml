@@ -2,4 +2,5 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="driveer.Node"/>
+    <fullyQualifiedTypeName name="driver.DataValue.State"/>
 </qualifiedTypeNameHistroy>
